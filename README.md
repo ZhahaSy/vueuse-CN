@@ -6,7 +6,7 @@
   <img src="https://raw.githubusercontent.com/vueuse/vueuse/main/packages/public/logo-vertical-dark.png#gh-dark-mode-only" alt="VueUse - Collection of essential Vue Composition Utilities" width="300">
 </a>
 <br>
-Collection of essential Vue Composition Utilities
+基本的 Vue 组合utils 集合
 </p>
 
 <p align="center">
@@ -24,31 +24,32 @@ Collection of essential Vue Composition Utilities
   </a>
 </p>
 
-## 🚀 Features
+## 🚀 特点
 
-- 🎪 [**Interactive docs & demos**](https://vueuse.org)
-- 🕶 **Seamless migration**: Works for **both** Vue 3 and 2
-- ⚡ **Fully tree shakeable**: Only take what you want, [bundle size](https://vueuse.org/export-size)
-- 🦾 **Type Strong**: Written in [TypeScript](https://www.typescriptlang.org/), with [TS Docs](https://github.com/microsoft/tsdoc)
-- 🔋 **SSR Friendly**
-- 🌎 **No bundler required**: Usable via CDN
-- 🔩 **Flexible**: Configurable event filters and targets
-- 🔌 **Optional [Add-ons](https://vueuse.org/add-ons)**: Router, Firebase, RxJS, etc.
+- 🎪 [**交互式文档 & demos**](https://vueuse.org)
+- 🕶 **无缝切换**:  Vue 3 和 2  **都可以** 使用
+- ⚡ **支持 tree shaking**: 只会打包使用到的Util, [utils大小 列表](https://vueuse.org/export-size)
+- 🦾 **强类型**: 使用 [TypeScript](https://www.typescriptlang.org/) 编写, 以及ts注释 [TS Docs](https://github.com/microsoft/tsdoc)
+- 🔋 **友好的 SSR**
+- 🌎 **支持外链**: 可通过CDN使用
+<!-- @TODO 待确认 原文：Configurable event filters and targets -->
+- 🔩 **更灵活**: 可配置的事件过滤器和目标
+- 🔌 **可选 [附件](https://vueuse.org/add-ons)**: Router, Firebase, RxJS, etc.
 
-## 🦄 Usage
+## 🦄 用法
 
 ```ts
 import { useLocalStorage, useMouse, usePreferredDark } from '@vueuse/core'
 
 export default {
   setup() {
-    // tracks mouse position
+    // 记录鼠标位置
     const { x, y } = useMouse()
 
-    // is user prefers dark theme
+    // 改变网页主题色为黑暗模式
     const isDark = usePreferredDark()
 
-    // persist state in localStorage
+    // 响应式的 localStorage
     const store = useLocalStorage(
       'my-storage',
       {
@@ -62,11 +63,11 @@ export default {
 }
 ```
 
-Refer to [functions list](https://vueuse.org/functions) or [documentations](https://vueuse.org/) for more details.
+详情参考 [函数列表](https://vueuse.org/functions) 或 [文档](https://vueuse.org/).
 
-## 📦 Install
+## 📦 安装
 
-> 🎩 From v4.0, it works for Vue 2 & 3 **within a single package** by the power of [vue-demi](https://github.com/vueuse/vue-demi)!
+> 🎩 从v4.0开始, 使用[vue-demi](https://github.com/vueuse/vue-demi)，使其可以**同时支持**vue2和vue3
 
 ```bash
 npm i @vueuse/core
@@ -74,7 +75,7 @@ npm i @vueuse/core
 
 [Add ons](https://vueuse.org/add-ons.html) | [Nuxt Module](https://vueuse.org/guide/index.html#nuxt)
 
-> From v6.0, VueUse requires `vue` >= v3.2 or `@vue/composition-api` >= v1.1
+> 从v4.0开始, VueUse 要求 `vue` >= v3.2 or `@vue/composition-api` >= v1.1
 
 ###### Demos
 
@@ -91,26 +92,26 @@ npm i @vueuse/core
 <script src="https://unpkg.com/@vueuse/core"></script>
 ```
 
-It will be exposed to global as `window.VueUse`
+会在全局暴露出来，使用 `window.VueUse` 获取
 
-## 🪴 Project Activity
+## 🪴 项目活跃度
 
-![Alt](https://repobeats.axiom.co/api/embed/a406ba7461a6a087dbdb14d4395046c948d44c51.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/a406ba7461a6a087dbdb14d4395046c948d44c51.svg "Repobeats分析图像")
 
-## 🧱 Contribute
+## 🧱 贡献
 
-See the [**Contributing Guide**](https://vueuse.org/contributing)
+请查收 [**贡献指南**](https://vueuse.org/contributing)
 
-## 🌸 Thanks
+## 🌸 鸣谢
 
-This project is heavily inspired by the following awesome projects.
+本项目是收到一下项目的启发和参考
 
 - [streamich/react-use](https://github.com/streamich/react-use)
 - [u3u/vue-hooks](https://github.com/u3u/vue-hooks)
 - [logaretm/vue-use-web](https://github.com/logaretm/vue-use-web)
 - [kripod/react-hooks](https://github.com/kripod/react-hooks)
 
-And thanks to [all the contributors on GitHub](https://github.com/vueuse/vueuse/graphs/contributors)!
+同时感谢 [贡献代码的所有的contributor](https://github.com/vueuse/vueuse/graphs/contributors)!
 
 ## 👨‍🚀 Contributors
 
