@@ -104,7 +104,7 @@ npm i @vueuse/core
 
 ## 🌸 鸣谢
 
-本项目是收到一下项目的启发和参考
+本项目是受到以下项目的启发和参考
 
 - [streamich/react-use](https://github.com/streamich/react-use)
 - [u3u/vue-hooks](https://github.com/u3u/vue-hooks)
